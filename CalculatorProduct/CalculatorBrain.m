@@ -39,7 +39,11 @@
     double result = 0;
     
     if ([operation isEqualToString:@"+"]){
-        result = [self popOperand] + [self popOperand];
+        
+        //result = [self popOperand] + [self popOperand];
+        double first = [self popOperand];
+        double second = [self popOperand];
+        result = first + second;
     } else if ([@"*" isEqualToString:operation]){
         result = [self popOperand] * [self popOperand];
     } else if ([operation isEqualToString:@"-"]){
@@ -48,10 +52,27 @@
     } else if ([operation isEqualToString:@"/"]){
         double divisor = [self popOperand];
         if (divisor) result = [self popOperand]/divisor;
+        
+    } else if ([operation isEqualToString:@"sin"]){
+        double topnum = [self popOperand];
+        result = sin(topnum);
+    } else if ([operation isEqualToString:@"cos"]){
+        double topnum = [self popOperand];
+        result = cos(topnum);
+    } else if ([operation isEqualToString:@"sqrt"]){
+        double topnum = [self popOperand];
+        result = sqrt(topnum);
+    } else if ([operation isEqualToString:@"pi"]){
+        result = M_PI;
     }
     
     [self pushOperand:result];
     
     return result;
+}
+
+- (void)performClear
+{
+    [self.operandStack removeAllObjects];
 }
 @end

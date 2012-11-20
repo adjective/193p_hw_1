@@ -1,5 +1,4 @@
-//
-//  CalculatorViewController.h
+//1//  CalculatorViewController.h
 //  CalculatorProduct
 //
 //  Created by HaoQi on 10/8/12.
@@ -11,5 +10,6 @@
 @interface CalculatorViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UILabel *display;
+@property (weak, nonatomic) IBOutlet UILabel *history;
 
 @end

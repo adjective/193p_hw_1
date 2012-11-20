@@ -9,13 +9,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "CalculatorProduct/CalculatorViewController.m"
-         timestampString = "374361475.80171"
+         timestampString = "375095324.237648"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "58"
-         endingLineNumber = "58"
-         landmarkName = "-decimalPressed"
-         landmarkType = "5">
+         startingLineNumber = "17"
+         endingLineNumber = "17">
       </FileBreakpoint>
    </FileBreakpoints>
 </Bucket>
